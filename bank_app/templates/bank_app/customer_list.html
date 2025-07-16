@@ -1,0 +1,29 @@
+{% extends 'bank_app/base.html' %}
+
+{% block title %}Customer List{% endblock %}
+
+{% block content %}
+<h2>All Customers</h2>
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Account #</th>
+            <th>Balance (₹)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td><a href="{% url 'customer_detail' customer.pk %}">{{ customer.name }}</a></td>
+            <td>{{ customer.email }}</td>
+            <td>{{ customer.account_number }}</td>
+            <td>{{ customer.balance }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

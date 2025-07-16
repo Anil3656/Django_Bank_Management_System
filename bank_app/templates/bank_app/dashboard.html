@@ -1,0 +1,59 @@
+{% extends 'bank_app/base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-primary text-white rounded">
+    <h1 class="display-5 fw-bold">Welcome to MyBank</h1>
+    <p class="fs-4">Secure • Fast • Reliable Banking</p>
+</div>
+
+<div class="row text-center">
+    <div class="col-md-4 mb-3">
+        <div class="card p-4 bg-success text-white">
+            <h4>Total Customers</h4>
+            <h2>{{ total_customers }}</h2>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card p-4 bg-info text-white">
+            <h4>Total Transactions</h4>
+            <h2>{{ total_transactions }}</h2>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card p-4 bg-warning text-dark">
+            <h4>Total Balance</h4>
+            <h2>₹ {{ total_balance }}</h2>
+        </div>
+    </div>
+</div>
+
+<h4 class="mt-5">Top Senders by Total Amount</h4>
+<canvas id="sentChart" width="400" height="200"></canvas>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('sentChart').getContext('2d');
+    const sentChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ chart_labels|safe }},
+            datasets: [{
+                label: 'Total Sent (₹)',
+                data: {{ chart_values|safe }},
+                backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+{% endblock %}
