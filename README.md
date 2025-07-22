@@ -11,7 +11,6 @@ A full-stack Django-based Bank Management System that allows customers to secure
 
 ## 🚀 Live Demo
 🌐 [https://yourusername.pythonanywhere.com](https://yourusername.pythonanywhere.com)  
-> _(Replace with your live link)_
 
 ---
 
