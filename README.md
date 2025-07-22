@@ -17,6 +17,14 @@ A full-stack Django-based Bank Management System that allows customers to secure
 ## 📸 Screenshots
 
 > _Add screenshots in `/screenshots` folder and embed below if needed_
+<img width="1920" height="1080" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/f213c631-480b-40a3-b971-1a9d1a59c076" />
+> <img width="1920" height="1080" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/c27d4b09-4bfb-4ce0-a35b-34dc74cbd0f2" />
+<img width="1920" height="1080" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/deb20315-068f-4b6b-b9b2-11c61dee0300" />
+<img width="1920" height="1080" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/d2b78adc-6fa1-4f89-a880-dc9ff8ed2c3f" />
+<img width="1920" height="1080" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/f9bcabdb-1cef-4f51-adf5-62751029ec52" />
+<img width="1920" height="1080" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/c9bcc522-6869-4075-a78f-1475e6c9cfa3" />
+<img width="1920" height="1080" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/7c627c96-3c58-4ee9-a132-98826bb103cc" />
+
 
 ---
 
